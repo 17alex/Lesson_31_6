@@ -1,0 +1,17 @@
+//
+//  module.modulemap
+//  Les31
+//
+//  Created by Алексей Алексеев on 05.07.2021.
+//
+
+module LibModule {
+    umbrella header "../MyLib/Umbrella.h"
+    export *
+    
+    explicit module MySubLib {
+        header "../MySubLib/UmbrellaSub.h"
+        export *
+    }
+    
+}
